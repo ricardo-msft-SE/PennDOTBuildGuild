@@ -384,9 +384,14 @@
             </article>
           </div>
           <div class="empty" id="empty-state">No sessions match that search. Try another topic or choose “All sessions.”</div>
-                const grid = document.querySelector("#session-grid");
+        </div>
+      </section>
+    </main>
+    <script>
+      const grid = document.querySelector("#session-grid");
       const search = document.querySelector("#session-search");
       const empty = document.querySelector("#empty-state");
+      const filters = document.querySelectorAll(".filter");
       let activeFilter = "all";
       // Guild sessions are the "Session" card type and always lead the grid.
       function isSessionCard(card) {
